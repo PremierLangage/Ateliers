@@ -6,7 +6,11 @@ Niveau Haut niveau
 
 ##  Description
 
-Les étudiant de façon synchrones suive les étapes de l'atelier.  Chaque étape consiste en soit un exercice, soit une question ouverte (ou les deux), soit une evaluation.
+Les étudiant de façon synchrones suivent les étapes de l'atelier.  
+Chaque étape consiste d'un des trois composant suivants :  
+- un exercice,
+- une question ouverte // rendu de fichier,  
+- une évaluation.
 
 
 > **Niveau** :Haut niveau, 
