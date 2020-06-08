@@ -7,6 +7,7 @@ Pour une question donnee, un professeur pourra creer une grille criterisee pouva
 * plusieurs criteres
 * plusieurs niveaux pour un critere
 * une note pour chaque niveau de chaque critere
+
 Lors d'un ajout de critere, il devra etre initialise avec le meme nombre de niveau que le critere precedent.
 
 Lorsque les etudiants auront fini de repondre a une question, elle pourra si besoin etre auto-evaluee et elle pourra etre evaluee par les etudiants en fonction de sa grille.
