@@ -1,8 +1,0 @@
-nom:definition:exemple
-exercice:Un exercice de la plateforme platon ouvert ou fermé: exemple 2 +2 egal ? 
-openquestion: Question ouverte avec une réponce qui h'est pas auto évaluable: Exemple que penser vous des Beatles -> textarea 
-grille: Une liste de critère : 
-critère: Question d'une grile, chaque critère ayant plusieurs niveau d'évaluation chaqu'un associé a une note: Lisibilité, mauvaise=0, correct=1, bonne = 2
-sénario:  Suite des étapes de l'atelier  : Un document a rendre + une grille 
-etape : Soit un exercice // openquestion + grille  + evaluation // 
-evaluation: Soit une evaluation professeur soit une evaluation etudiant (+ affectation de copies) 
