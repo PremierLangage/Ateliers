@@ -1,0 +1,3 @@
+nom	principal	humain	formation	role
+student	True	True	False	Fait des exercices, evalue des réponces,  compare des réponces, 
+teacher	True	True	True	Organise l'atelier, produit des grilles,  evalue des réponces ,  compare des réponces, evalue les évaluations 
