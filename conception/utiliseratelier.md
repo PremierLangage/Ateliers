@@ -34,17 +34,17 @@ Chaque étape consiste d'un des trois composant suivants :
 FIXME_[tout ce passe bien c'est le scénario parfait .]_
 
 1.  le système propose a chaque élève du groupe (présents) la première étape.  
-2.  l'élève intéragit avec l'étape:
-    Si l'étape est une exercice (ou une question ouverte) playexo gère les actions de l'utilisateur.
-    Si l'étape est une évaluation
-    2.1  le logiciel distribue les copies aux eleves presents. L'eleve ne doit pas retomber sur sa copie.
-    2.2  l'eleve remplit la grille par rapport a la copie recue et clique sur valide.
-    2.3  si besoin, retourner en 2.1 pour que les copies soient corrigees plusieurs fois.
-    2.4  le logiciel attribut les notes (ou notes moyennes) pour chaque copie.
-    2.5  le logiciel affiche des resultats globaux (moyenne pour chaque critere, moyenne totale).
-    2.6  fin de l'evaluation
-3.  retour en 2 sauf si plus d'étape.
-4.  le système calcul la fin de l'atelier 
+2.  l'élève intéragit avec l'étape:  
+    Si l'étape est une exercice (ou une question ouverte) playexo gère les actions de l'utilisateur.  
+    Si l'étape est une évaluation  
+    2.1  le logiciel distribue les copies aux eleves presents. L'eleve ne doit pas retomber sur sa copie.  
+    2.2  l'eleve remplit la grille par rapport a la copie recue et clique sur valide.  
+    2.3  si besoin, retourner en 2.1 pour que les copies soient corrigees plusieurs fois.  
+    2.4  le logiciel attribut les notes (ou notes moyennes) pour chaque copie.  
+    2.5  le logiciel affiche des resultats globaux (moyenne pour chaque critere, moyenne totale).  
+    2.6  fin de l'evaluation  
+3.  retour en 2 sauf si plus d'étape.  
+4.  le système calcul la fin de l'atelier   
  
 5. l'objectif c'est les exercices sont fait pour une majorité des étudiants. 
 
