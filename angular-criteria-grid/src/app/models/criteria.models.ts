@@ -1,11 +1,11 @@
-export interface Niveau{
+export interface Level {
+    id: number;
     description: string;
     points: number;
 }
 
-export interface Critere {
+export interface Criteria {
+    id: number;
     description: string;
-    niveaux: Niveau[];
+    levels: Level[];
 }
-  
-  

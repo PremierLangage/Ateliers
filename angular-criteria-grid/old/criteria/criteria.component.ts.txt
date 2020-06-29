@@ -7,13 +7,13 @@ import { Critere, Niveau } from '../models/criteria.models';
   styleUrls: ['./criteria.component.scss']
 })
 
-export class CriteriaComponent implements OnInit {
-  @Input() critere: Critere;
+export class CriteriaComponent /* implements OnInit */ {
+  @Input() item: Critere;
   saisieDesc = '';
 
   constructor() { }
 
-  ngOnInit(): void {
+/*   ngOnInit(): void {
     this.saisieDesc = this.critere.description;
   }
 
@@ -30,6 +30,6 @@ export class CriteriaComponent implements OnInit {
   deleteLevel(level:Niveau){
     this.critere.niveaux.splice(this.critere.niveaux.indexOf(level),1);
   }
-
+ */
 
 }

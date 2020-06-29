@@ -1,0 +1,67 @@
+
+<!--
+<div>
+    <table>
+        <ng-container *ngFor="let item of items; trackBy: track; let i=index; let f = first; ">
+            <tr>
+                <td style="background-color: rgb(183, 135, 220);">
+                    <div>
+                        <div>
+                            <button class="space" (click)="moveUp(items.indexOf(item))" [disabled]="i == 0">Déplacer haut</button>
+                        </div>
+                        <div>
+                            <button  [disabled]="items.length <= 2" (click)="delete(item)" class="space">Supprimer</button>
+                        </div>
+                        <div>
+                            <button class="space" (click)="moveDown(items.indexOf(item))" [disabled]="items.indexOf(item) == items.length - 1" >Déplacer bas</button>
+                        </div>
+                    </div>
+                </td>
+                <app-criteria style="border-collapse: collapse; float: left;" [critere]="item"></app-criteria>
+            </tr>
+        </ng-container>
+    </table>
+    <p>
+        <button (click)="add()">Ajouter un critère</button>
+    </p>
+</div>
+<p>
+    <button (click)="affichage()">
+        Enregistrer la grille
+    </button>
+</p>
+ -->
+
+
+
+
+/*   add(){
+    this.cs.add();
+  }
+
+  delete(item:Critere){
+    this.cs.delete(item);
+  }
+
+  affichage(){
+    console.log(this.items);
+  }
+
+  moveUp(index:number){
+    let tmp:Critere;
+    tmp = this.items[index];
+    this.items[index] = this.items[index-1];
+    this.items[index-1]=tmp;
+  }
+
+  moveDown(index:number){
+    let tmp:Critere;
+    tmp = this.items[index];
+    this.items[index] = this.items[index+1];
+    this.items[index+1]=tmp;
+  }
+
+
+  track(index: number, item: Critere) {
+    return item.description;
+  } */

@@ -1,0 +1,35 @@
+<div class="container" [style.--nb-columns]="item.levels.length + 1">
+  <!-- BUTTONS -->
+  <div class="buttons">
+    <button
+      [disabled]="!canMoveUp"
+      (click)="moveUp.emit(item)">
+      Up
+    </button>
+    <button (click)="delete.emit(item)">Supprimer</button>
+    <button
+      [disabled]="!canMoveDown"
+      (click)="moveDown.emit(item)">
+      Down
+    </button>
+  </div>
+  <!-- LEVELS -->
+  <ng-container *ngFor="let level of item.levels">
+    <div class="level">
+      <textarea
+        placeholder="Ajouter une description au critere"
+        [(ngModel)]="level.description">
+      </textarea>
+      <input
+        type="number"
+        placeholder="Points"
+        [(ngModel)]="level.points">
+      <button
+        [disabled]="disabled"
+        (click)="deleteLevel(level)">
+        Supprimer
+      </button>
+    </div>
+  </ng-container>
+  <button (click)="addLevel()">Ajouter</button>
+</div>

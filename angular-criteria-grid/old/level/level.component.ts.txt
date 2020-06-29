@@ -7,9 +7,10 @@ import { Niveau } from '../models/criteria.models';
   styleUrls: ['./level.component.scss']
 })
 export class LevelComponent implements OnInit {
-  @Input() niveau:Niveau;
-  @Input() numberOfLevel:number;
-  @Output() nbDeleteLevel = new EventEmitter();
+  @Input() niveau: Niveau;
+  @Input() numberOfLevel: number;
+  @Output() nbDeleteLevel = new EventEmitter<number>();
+
   saisieDesc = '';
   saisiePoints:number;
 

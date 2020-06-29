@@ -1,4 +1,4 @@
-
+<!--
 <div>
     <div style="position: relative;">
         <textarea (blur)="changeDescription()" name="description" cols="11" rows="5" [placeholder]="'Ajouter une description au niveau'" [(ngModel)]="saisieDesc"></textarea>
@@ -6,10 +6,11 @@
 </div>
 
 <div>
-    <input (blur)="addPoints()" (click)="addPoints()" type="number" style="width:30px"  [placeholder]="niveau.points" [(ngModel)]="saisiePoints">
+    <input type="number"
+     style="width:30px"  [placeholder]="niveau.points" [(ngModel)]="niveau.points">
     points
 </div>
 
 <div style="position: relative; margin: 10px;">
-    <button (click)="delete()" [disabled]= "numberOfLevel <= 2">Supprimer</button>
-</div>
+    <button (click)="delete()" [disabled]= "disabled">Supprimer</button>
+</div> -->

@@ -1,0 +1,17 @@
+.container {
+  --nb-columns: 2;
+
+  display: grid;
+  grid-template-columns: 100px repeat(var(--nb-columns), 1fr);
+  border: 1px solid #F6F6F6;
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .level {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    border: 1px solid #F6F6F6;
+  }
+}

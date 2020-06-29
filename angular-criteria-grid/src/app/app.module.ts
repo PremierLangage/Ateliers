@@ -3,19 +3,21 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CriteriaComponent } from './criteria/criteria.component';
-import { LevelComponent } from './level/level.component';
+import { CriteriaGridModule } from './criteria-grid/criteria-grid.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CriteriaComponent,
-    LevelComponent
   ],
   imports: [
     FormsModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
+    CriteriaGridModule,
+
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
