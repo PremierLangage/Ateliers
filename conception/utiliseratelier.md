@@ -1,13 +1,12 @@
 
-
 # Cas d'utilisation N° 1 :  utiliser l'atelier 
 
 Niveau Haut niveau
 
 ##  Description
 
-Les étudiant de façon synchrones suivent les étapes de l'atelier.  
-Chaque étape consiste d'un des trois composant suivants :  
+Les étudiants de façon synchrones suivent les étapes de l'atelier.  
+Chaque étape consiste d'un des trois composants suivants :  
 - un exercice,
 - une question ouverte // rendu de fichier,  
 - une évaluation.
@@ -20,33 +19,55 @@ Chaque étape consiste d'un des trois composant suivants :
 > **Parties Prenantes concernées** : -   
  
  
-## Preconditions
+## Préconditions
 
-1) le cas d'utilisation préparer atelier a été terminé avec success.
-    --> tout les exercices sont testés (fonctionnels)
-2) le groupe est définie (voir platon).
-3) tout les utilisateurs sont connus de platon.
+1) le cas d'utilisation préparer atelier a été terminé avec succès.
+    --> tous les exercices sont testés (fonctionnels)
+    --> nb max d'éval par élèves
+    --> grille(s) critériée(s) créée(s) et assignée(s) à leur exercice correspondant
+2) le groupe est défini (voir platon).
+3) tous les utilisateurs sont connus de platon.
 
 
 
-## Scenario Nominal
+## Scénario Nominal
 
 FIXME_[tout ce passe bien c'est le scénario parfait .]_
 
-1.  le système propose a chaque élève du groupe (présents) la première étape.  
-2.  l'élève intéragit avec l'étape:  
-    Si l'étape est une exercice (ou une question ouverte) playexo gère les actions de l'utilisateur.  
-    Si l'étape est une évaluation  
-    2.1  le logiciel distribue les copies aux eleves presents. L'eleve ne doit pas retomber sur sa copie.  
-    2.2  l'eleve remplit la grille par rapport a la copie recue et clique sur valide.  
-    2.3  si besoin, retourner en 2.1 pour que les copies soient corrigees plusieurs fois.  
-    2.4  le logiciel attribut les notes (ou notes moyennes) pour chaque copie.  
-    2.5  le logiciel affiche des resultats globaux (moyenne pour chaque critere, moyenne totale).  
-    2.6  fin de l'evaluation  
-3.  retour en 2 sauf si plus d'étape.  
-4.  le système calcul la fin de l'atelier   
- 
-5. l'objectif c'est les exercices sont fait pour une majorité des étudiants. 
+1.  Le professeur propose la première étape à chaque élève (présents) du groupe par la biais d'un cpltp.  
+2.  L'élève intéragit avec l'étape:  
+    Si l'étape est une exercice (ou une question ouverte), playexo gère les actions de l'utilisateur.  
+    Si l'étape est une évaluation critériée :  
+        2.1  Un exercice platon distribue les copies aux élèves présents selon les critères suivants :  
+            2.1.1  L'élève ne doit pas retomber sur sa copie.  
+            2.1.2  L'élève ne doit pas retomber sur une copie qu'il a déjà corrigée.  
+            2.1.3  L'élève ne doit pas retomber sur une copie qui a été corrigée suffisamment de fois.  
+            2.1.4  Si l'élève a corrigé suffisamment de copie (param nb max d'éval par élèves), aller en 2.4.  
+        2.2  L'élève fait l'exercice correspondant à l'évaluation critériée, la copie donnée ainsi que la grille critériée.  
+        2.3  Retour en 2.1 pour que les copies soient corrigées plusieurs fois.  
+        2.4  Un exercice platon donne un feedback à chaque élève.  
+        2.5  Un exercice platon affiche des résultats globaux.  
+        2.6  Fin de l'évaluation critériée.  
+    Si l'étape est une évaluation croisée :  
+        2.1  Un exercice platon distribue les copies aux élèves présents. 
+        2.2  L'élève fait l'exercice correspondant à l'évaluation croisée, la copie donnée ainsi que la grille critériée.  
+        2.3  Retour en 2.1 pour que les copies soient comparées plusieurs fois.  
+        2.4  Un exercice platon donne un feedback à chaque élève pour leur copie.  
+        2.5  Un exercice platon affiche des résultats globaux.  
+        2.6  Fin de l'évaluation croisée.  
+3.  Retour en 2 sauf si plus d'étape.  
+4.  Le système calcul la fin de l'atelier.  
+5.  L'objectif est que les exercices soient faits pour une majorité des étudiants.  
+
+Les élèves peuvent :
+* demander à refaire un exercice  
+
+Le professeur peut :
+* voir son tableau de bord (avancement de l'atelier et des différents exercices le composant, résultats des exercices, nb élèves connectés)  
+* mettre fin à un exercice  
+* durant une évaluation critériée, il peut évaluer une copie (ajout d'une éval à la copie) qu'il aura choisit dans sa liste 
+et il a un bouton qui dit à l'élève de recommencer son exercice.  
+* choisir quels élèves referont leur exercice en fonction des demandes émises (bouton individuel + bouton qui sélectionne tous les élèves)  
 
 
 ### Extensions
