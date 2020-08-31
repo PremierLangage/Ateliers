@@ -5,7 +5,7 @@
 
   <mat-card-content>
     <ng-container *ngFor="let item of items; let isFirst=first; let isLast=last; trackBy: trackBy">
-      <app-criteria
+      <app-criterion
         [item]="item"
         [disabled]="item.levels.length <= 2"
         [canMoveUp]="!isFirst"
@@ -14,7 +14,7 @@
         (delete)="deleteCritere($event)"
         (moveUp)="moveUp($event)"
         (moveDown)="moveDown($event)">
-      </app-criteria>
+      </app-criterion>
     </ng-container>
   </mat-card-content>
 

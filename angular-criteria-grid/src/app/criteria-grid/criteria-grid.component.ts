@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CriteriaGridService } from './criteria-grid.service';
-import { Criteria } from '../models/criteria-grid.models';
+import { Criterion } from '../models/criteria-grid.models';
 
 
 @Component({
@@ -9,7 +9,7 @@ import { Criteria } from '../models/criteria-grid.models';
   styleUrls: ['./criteria-grid.component.scss']
 })
 export class CriteriaGridComponent implements OnInit {
-  items: Criteria[] = [];
+  items: Criterion[] = [];
 
   constructor(
     private readonly grid: CriteriaGridService
@@ -23,20 +23,20 @@ export class CriteriaGridComponent implements OnInit {
     this.grid.addCritere();
   }
 
-  deleteCritere(item: Criteria) {
+  deleteCritere(item: Criterion) {
     this.grid.deleteCritere(item);
   }
 
-  moveUp(item: Criteria) {
+  moveUp(item: Criterion) {
     let index:number = this.items.indexOf(item);
-    let tmp:Criteria = this.items[index];
+    let tmp:Criterion = this.items[index];
     this.items[index] = this.items[index-1];
     this.items[index-1]=tmp;
   }
 
-  moveDown(item: Criteria) {
+  moveDown(item: Criterion) {
     let index:number = this.items.indexOf(item);
-    let tmp:Criteria = this.items[index];
+    let tmp:Criterion = this.items[index];
     this.items[index] = this.items[index+1];
     this.items[index+1]=tmp;
   }
@@ -47,7 +47,7 @@ export class CriteriaGridComponent implements OnInit {
     console.log(this.grid);
   }
 
-  trackBy(_: number, item: Criteria) {
+  trackBy(_: number, item: Criterion) {
     return item.id;
   }
 

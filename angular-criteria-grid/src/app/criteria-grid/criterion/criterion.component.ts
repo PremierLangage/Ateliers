@@ -1,21 +1,21 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { Criteria, Level } from 'src/app/models/criteria-grid.models';
+import { Criterion, Level } from 'src/app/models/criteria-grid.models';
 
 @Component({
-  selector: 'app-criteria',
-  templateUrl: './criteria.component.html',
-  styleUrls: ['./criteria.component.scss']
+  selector: 'app-criterion',
+  templateUrl: './criterion.component.html',
+  styleUrls: ['./criterion.component.scss']
 })
-export class CriteriaComponent implements OnInit {
-  @Input() item: Criteria;
+export class CriterionComponent implements OnInit {
+  @Input() item: Criterion;
   @Input() disabled = false;
   @Input() canMoveUp = false;
   @Input() canMoveDown = false;
   @Input() canDelete = false;
 
-  @Output() delete = new EventEmitter<Criteria>();
-  @Output() moveUp = new EventEmitter<Criteria>();
-  @Output() moveDown = new EventEmitter<Criteria>();
+  @Output() delete = new EventEmitter<Criterion>();
+  @Output() moveUp = new EventEmitter<Criterion>();
+  @Output() moveDown = new EventEmitter<Criterion>();
 
   constructor() { }
 

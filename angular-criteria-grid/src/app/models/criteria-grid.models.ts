@@ -4,7 +4,7 @@ export interface Level {
   points: number;
 }
 
-export interface Criteria {
+export interface Criterion {
   id: number;
   description: string;
   levels: Level[];

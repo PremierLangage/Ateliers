@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Criteria } from '../models/criteria-grid.models';
+import { Criterion } from '../models/criteria-grid.models';
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +9,7 @@ export class CriteriaGridService {
 constructor() { }
 
 private nextId = 0;
-  private items: Criteria[] = [
+  private items: Criterion[] = [
     {
       id: 0,
       description: '1er critere',
@@ -26,7 +26,7 @@ private nextId = 0;
   }
 
   addCritere() {
-    const newItem: Criteria = {
+    const newItem: Criterion = {
       id: ++this.nextId,
       description: '',
       levels: []
@@ -42,7 +42,7 @@ private nextId = 0;
     this.items.push(newItem);
   }
 
-  deleteCritere(item: Criteria) {
+  deleteCritere(item: Criterion) {
     const index = this.items.findIndex(e => e.id === item.id);
     if (index !== -1) {
       this.items.splice(index, 1);
