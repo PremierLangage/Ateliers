@@ -51,7 +51,7 @@ Chaque étape consiste d'un des trois composants suivants :
     g. Si l'élève a un exercice fermé à faire, allez en 3.7.  
     h. Si l'élève n'a plus rien à faire, allez en 3.8.  
     Il faut vérifier les conditions dans l'ordre (*a* à *h*) à chaque fois car quand un élève fait un exercice d'évaluation ou un exercice de comparaison, il crée de la donnée pour les autres élèves et une potentielle évaluation ou comparaison à faire.  
-3. L'élève intéragit avec l'étape :  
+3. L'élève intéragit avec une des étapes suivantes :  
     3.1. Exercice de comparaison : playexo gère les actions de l'utilisateur.  
     3.2. Comparaison : l'élève fait l'exercice correspondant à la comparaison, la copie d'élève donnée ainsi que la grille critériée.  
     3.3. Feedback de comparaison : le système fait tourner l'exercice qui donne un feedback à chaque élève.  
